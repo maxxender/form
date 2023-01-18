@@ -95,6 +95,7 @@ submitBtns.forEach(submitBtn=>{
                 submitBtn.parentElement.parentElement.parentElement.classList.add('form-part__use')
             }
         }
+        console.log(lastIndexFormPart);
     });
 });
 
