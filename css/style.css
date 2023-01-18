@@ -1,0 +1,126 @@
+.header-prev{
+    background-image: url("../images/willian-justen-de-vasconcellos-LzwNq8DVQzs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    background-color: #243571;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+form{
+    width: 450px;
+    background-color: #fff;
+    color: blue;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 10px 25px;
+    position: relative;
+    left: 700px;
+}
+
+.form-part{
+    display: none;
+    border: 1px solid black;
+}
+.form-part__active{
+    display: inline-block;
+}
+.form-part__body-part{
+    border: 1px solid #6eacff;
+    width: 180px;
+    height: 200px;
+    display: inline-block;
+    background-color: #e8f2ff;
+}
+
+.form-part__body-part__active{
+    background-color: aqua;
+}
+
+.form-part__img{
+    width: 150px;
+    height: 170px;
+}
+
+.form-part__footer div{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+.form-part__footer-btn{
+    background-color: #fff;
+    color: #6eacff;
+    border: 1px solid #6eacff;
+    padding: 5px 7px;
+    font-size: 0.8em;
+}
+
+.form-part__btn{
+    text-align: left;
+    width: 300px;
+    position: relative;
+    left: 40px;
+    margin: 30px 0;
+}
+.form-part input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+}
+.form-part input:focus-within{
+    border: 1px solid green;
+}
+.defil-button{
+    margin: 90px -40px;
+}
+.btn img{
+    width: 18px;
+    color: white;
+    
+}
+.img-calendar{
+    font-size: 1.5em;
+    width: 100px;
+    height: auto;
+}
+.focus-case{
+    border: 2px solid #243571;
+    background-color: #bfcaf2;
+}
+.border-red{
+    border: 2px solid red;
+}
+.border-orange{
+    border: 2px solid orange;
+}
+.img-form-part.france-renov{
+    width: 400px;
+}
+.img-revenu-fiscal{
+    width: 100px;
+}
+.level-form{
+    height: 2px;
+    background-color: #243571;
+    width: inherit;
+}
+.form-response__error{
+    color: red;
+    display: none;
+}
+
+.form-response{
+    display: none;
+}
