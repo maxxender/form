@@ -38,7 +38,6 @@ defilBtnDown.addEventListener("click",function(event){
     }
 });
 
-
 // on empeche les boutto de faire leur action par defaut
 submitBtns.forEach(submitBtn=>{
     submitBtn.addEventListener('click',function(e)
@@ -73,6 +72,9 @@ submitBtns.forEach(submitBtn=>{
                 lastIndexFormPart++;
                 allFormPart[lastIndexFormPart].style.display = 'inline-block';
                 submitBtn.parentElement.parentElement.classList.add('form-part__use')
+                if(lastIndexFormPart > 10 && Object.values(informations).length > 9){
+                    document.querySelector('.defil-button').style.display = 'none';
+                }
             }else{
                 submitBtn.parentElement.parentElement.querySelector('.form-response__error').style.display = 'inline-block';
                 setTimeout(function(){
@@ -95,7 +97,7 @@ submitBtns.forEach(submitBtn=>{
                 submitBtn.parentElement.parentElement.parentElement.classList.add('form-part__use')
             }
         }
-        console.log(lastIndexFormPart);
+        navbarForm(document.querySelector('.navbar-form'), allFormPart)
     });
 });
 
@@ -121,8 +123,8 @@ formPartInputs.forEach(formPartInput=>{
         if(this.classList.contains('revenu') && this.value.length > 3){
             informations.revenu = this.value;
         }
-    })
-})
+    });
+});
 
 // On ajoute chaque choix du formulaire à l'objet INFORMATIONS
 caseElements.forEach(caseElement=>{
@@ -151,3 +153,12 @@ caseElements.forEach(caseElement=>{
         }
     });
 });
+
+function navbarForm(navbarDiv,elts){
+    navbarDiv.style.display = 'inline-block'
+    navbarLevel = lastIndexFormPart * 100 / (elts.length - 1)
+    navbarDiv.style.width = navbarLevel + "%";
+    console.log(elts.length)
+    console.log(navbarDiv)
+    console.log(navbarLevel)
+}

@@ -23,7 +23,6 @@ body{
 
 form{
     width: 400px;
-    height: 650px;
     background-color: #fff;
     padding: 10px 15px;
     text-align: center;
@@ -127,12 +126,20 @@ ol{
     width: 100px;
 }
 .level-form{
-    width: 400px;
+    text-align: left;
+    width: 370px;
     height: 2px;
-    background-color: #0b69e4;
 }
 .navbar-form{
-    width: 100%;
+    position: absolute;
+    display: none;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #0b69e4;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 .form-response__error{
     color: red;
